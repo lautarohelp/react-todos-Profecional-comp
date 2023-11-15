@@ -1,0 +1,15 @@
+
+h1 {
+  font-size: 24px;
+  text-align: center;
+  margin:0;
+  padding:48px;
+  position: relative;
+}
+.complete{
+  color: antiquewhite;
+}
+.tareasCompletadas{
+  transition: all 0.2s ease;
+  opacity: 0;
+}

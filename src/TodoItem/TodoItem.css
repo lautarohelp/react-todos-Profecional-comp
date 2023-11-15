@@ -1,0 +1,30 @@
+body {
+  perspective: 800px;
+}
+.text {
+  overflow-wrap: anywhere;
+}
+.itemns-textos {
+  color: rgb(0, 0, 0);
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(78, 76, 76, 0.435);
+}
+.spanV,.spanX {
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.7s ease;
+}
+.spanX:hover {
+  color: red;
+  transform: rotate3d(0, -1, 1, 360deg);
+}
+.texto-hecho{
+  text-decoration: line-through;
+}
+.spanVactive{
+color: green;
+}
