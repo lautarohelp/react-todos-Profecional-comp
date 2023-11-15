@@ -20,23 +20,30 @@ import { ChangeAlert } from '../ChangeAlert';
 
 function App() {
   const {
-    loading,
-    todos,
-    error,
-    searchTodos,
-    completeTodo,
-    deleteTodo,
-    openModal,
-    setOpenModal,
-    completedTodos,
-    totalTodos,
-    searchValue,
-    setSearchValue,
-    addTodo,
-    openModa,
-    sincronizeTodo,
+    states,
+    stateUpdaters,
 } = useTodos();
   
+  const {
+    error,
+    loading,
+    searchTodos,
+    totalTodos,
+    completedTodos,
+    completeTodo,
+    openModal,
+    searchValue,
+  } = states;
+
+  const {
+    todos,
+    setSearchValue,
+    addTodo,
+    deleteTodo,
+    setOpenModal,
+    sincronizeTodo,
+  } = stateUpdaters;
+
 return (
   <> {/* tambien lo podemos hacer React.fragment */}
 
@@ -86,7 +93,7 @@ return (
 
   <CreateTodoButtondoButton 
   setOpenModal={setOpenModal}
-  openModa={openModa}
+  openModa={openModal}
   />
 
   {openModal && (
