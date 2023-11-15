@@ -1,0 +1,35 @@
+.contenedorAlert{
+  position: fixed;
+  background: rgba(0, 0, 0, 0.364);
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: -200px;
+  z-index: 2;
+  display: flex;
+  align-items: end;
+}
+.contenedorAlert--div {
+  background: black;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 50%;
+  color: aliceblue;
+  padding: 20px 5px 0 5px;
+}
+
+.botonChangue{
+  background: rgba(43, 43, 104, 0.653);
+  box-shadow: 1px 1px 30px 1px rgba(133, 133, 205, 0.307);;
+  width: 100px;
+  height: 30px;
+  border:none;
+  /* border-radius: 5px; */
+  color: aliceblue;
+  font-size: 20px;
+  margin-top: 20px;
+
+}

@@ -1,12 +1,8 @@
 import React from 'react';
 import './TodoSarch.css';
-import { TodoContext } from '../TodoContext';
 
-function TodoSarch() {
-  const {
-      searchValue,
-      setSearchValue,
-  } = React.useContext(TodoContext)
+function TodoSarch({searchValue,setSearchValue,loading}) {
+
 
   return (
     <input placeholder="Search"
@@ -14,6 +10,7 @@ function TodoSarch() {
     onChange={(event) => {
       setSearchValue(event.target.value);
     }}
+    disabled={loading}
     />
   );
 }

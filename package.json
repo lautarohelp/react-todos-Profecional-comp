@@ -32,8 +32,12 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "http://lautarohelp.github.io/react-TODOS",
+  "homepage": "http://lautarohelp.github.io/react-todos-compsdeploy",
   "devDependencies": {
     "gh-pages": "^6.0.0"
-  }
+  },
+  "description": "¡Hola, Platzinauta!",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
 }

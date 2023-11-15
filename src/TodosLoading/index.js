@@ -8,7 +8,6 @@ function TodosLoading(){
           <p className="LoadingTodo-text">{/* Cargando */}</p>
         <span className='LoadingTodo-deleteIcon'></span>
     </div>
-   
   );
 }
 
