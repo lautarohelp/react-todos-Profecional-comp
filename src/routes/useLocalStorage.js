@@ -42,7 +42,7 @@ function useLocalStorage(itemName, initialValue) {
         onError(error);
         /* setError(true); */
       }
-    }, 3000);
+    }, 1000);
   }, [sicronizedItem]);
 
   
