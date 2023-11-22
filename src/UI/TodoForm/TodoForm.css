@@ -1,12 +1,16 @@
 form {
 display: flex;
+text-align: center;
 flex-direction: column;
-background: rgb(8, 50, 58);
-max-width: 300px;
+/* background: rgb(8, 50, 58); */
+color: rgb(182, 182, 182);
+max-width: 500px;
+
 width: 90%;
 padding: 15px;
 border-radius: 20px;
 font-weight: bold;
+margin: 15% auto;
 transition: all .2s ease;
 
 }
@@ -20,6 +24,9 @@ textarea{
   margin: 10px 0;
   padding: 10px;
   border-radius: 20px;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
 }
 .TodoForm-buttonContainer{
  display: flex;
@@ -41,4 +48,5 @@ textarea{
 }
 .TodoForm-button--cancel{
   background: rgba(14, 165, 195, 0);
+  color: rgb(182, 182, 182);
 }

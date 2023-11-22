@@ -31,7 +31,6 @@ function useLocalStorage(itemName, initialValue) {
           
         }else{
         parsedItem = JSON.parse(localStorageItem);
-        console.log(parsedItem);  
       }
 
       onSuccess(parsedItem);
@@ -43,7 +42,7 @@ function useLocalStorage(itemName, initialValue) {
         onError(error);
         /* setError(true); */
       }
-    }, 2000);
+    }, 3000);
   }, [sicronizedItem]);
 
   

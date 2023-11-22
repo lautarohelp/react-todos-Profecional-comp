@@ -1,24 +1,24 @@
 /* import logo from './platzi.webp'; */
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-import { TodoHeader } from '../TodoHeader';
-import { TodoList } from '../TodoList';
-import { TodoItem } from '../TodoItem';
-import { TodosLoading } from '../TodosLoading';
-import { TodosError } from '../TodosError';
-import { EmptyTodos } from '../EmptyTodos/.index';
-import { CreateTodoButtondoButton } from '../CreateTodoButtondoButton';
-import { FailTodos } from '../FailTodos';
-import { Modal } from '../Modal';
-import { TodoForm } from '../TodoForm';
-import { TodoCounter } from '../TodoCounter';
-import { TodoSarch } from '../TodoSarch';
-import { useTodos } from './useTodos';
-import { ChangeAlert } from '../ChangeAlert';
-
+import { TodoHeader } from '../../UI/TodoHeader';
+import { TodoList } from '../../UI/TodoList';
+import { TodoItem } from '../../UI/TodoItem';
+import { TodosLoading } from '../../UI/TodosLoading';
+import { TodosError } from '../../UI/TodosError';
+import { EmptyTodos } from '../../UI/EmptyTodos/.index';
+import { CreateTodoButtondoButton } from '../../UI/CreateTodoButtondoButton';
+import { FailTodos } from '../../UI/FailTodos';
+import { TodoCounter } from '../../UI/TodoCounter';
+import { TodoSarch } from '../../UI/TodoSarch';
+import { useTodos } from '../useTodos';
+import { ChangeAlert } from '../../UI/ChangeAlert';
 
 
-function App() {
+
+function HomePage() {
+  const navigate = useNavigate();
   const {
     states,
     stateUpdaters,
@@ -31,16 +31,16 @@ function App() {
     totalTodos,
     completedTodos,
     completeTodo,
-    openModal,
+   /*  openModal, */
     searchValue,
   } = states;
 
   const {
     todos,
     setSearchValue,
-    addTodo,
+    /* addTodo */
     deleteTodo,
-    setOpenModal,
+    /* setOpenModal, */
     sincronizeTodo,
   } = stateUpdaters;
 
@@ -82,27 +82,29 @@ return (
     >
       { todo => (
         <TodoItem 
-          key={todo.text}
+          key={todo.id}
           text={todo.text}
           complete={todo.complete}
-          onComplete={() => completeTodo(todo.text)}
-          onDelete={() => deleteTodo(todo.text)}
+          onEdit={() => navigate('/edit/' + todo.id, {state: {todo}},)}
+          onComplete={() => completeTodo(todo.id)}
+          onDelete={() => deleteTodo(todo.id)}
     />
       )}
     </TodoList>
 
   <CreateTodoButtondoButton 
-  setOpenModal={setOpenModal}
-  openModa={openModal}
+  onClick={() => navigate('/new')}
+  /* setOpenModal={setOpenModal}
+  openModa={openModal} */
   />
 
-  {openModal && (
+  {/* {openModal && (
     <Modal>
       <TodoForm 
         addTodo={addTodo}
         setOpenModal={setOpenModal}/>
     </Modal>
-  )}
+  )} */}
 
   <ChangeAlert 
     sincronize={sincronizeTodo}
@@ -112,4 +114,4 @@ return (
 }
 
 
-export default App;
+export {HomePage};
