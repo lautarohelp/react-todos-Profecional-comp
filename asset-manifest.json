@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/react-todos-Profecional-comp/static/css/main.45fe46a4.css",
-    "main.js": "/react-todos-Profecional-comp/static/js/main.7933ced6.js",
+    "main.js": "/react-todos-Profecional-comp/static/js/main.43df253f.js",
     "index.html": "/react-todos-Profecional-comp/index.html",
     "main.45fe46a4.css.map": "/react-todos-Profecional-comp/static/css/main.45fe46a4.css.map",
-    "main.7933ced6.js.map": "/react-todos-Profecional-comp/static/js/main.7933ced6.js.map"
+    "main.43df253f.js.map": "/react-todos-Profecional-comp/static/js/main.43df253f.js.map"
   },
   "entrypoints": [
     "static/css/main.45fe46a4.css",
-    "static/js/main.7933ced6.js"
+    "static/js/main.43df253f.js"
   ]
 }
