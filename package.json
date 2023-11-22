@@ -1,5 +1,5 @@
 {
-  "name": "react-profecional-comps",
+  "name": "react-profecional-comp",
   "version": "0.1.0",
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
@@ -34,7 +34,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "http://lautarohelp.github.io/react-profecional-comps",
+  "homepage": "http://lautarohelp.github.io/react-profecional-comp",
   "devDependencies": {
     "gh-pages": "^6.0.0"
   },
