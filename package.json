@@ -34,12 +34,12 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "http://lautarohelp.github.io/react-profecional-comp",
+  "homepage": "http://lautarohelp.github.io/react-todos-Profecional-comp",
   "devDependencies": {
     "gh-pages": "^6.0.0"
   },
   "description": "mejorando la aplicacion creando la actualizacion de v2",
   "main": "index.js",
-  "author": "",
+  "author": "Lautarohelp",
   "license": "ISC"
 }
