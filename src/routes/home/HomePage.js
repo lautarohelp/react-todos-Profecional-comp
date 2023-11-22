@@ -1,6 +1,6 @@
 /* import logo from './platzi.webp'; */
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 
 import { TodoHeader } from '../../UI/TodoHeader';
 import { TodoList } from '../../UI/TodoList';
@@ -18,6 +18,8 @@ import { ChangeAlert } from '../../UI/ChangeAlert';
 
 
 function HomePage() {
+  const [params, setParams] = useSearchParams();
+
   const navigate = useNavigate();
   const {
     states,
@@ -55,6 +57,8 @@ return (
       <TodoSarch 
         searchValue={searchValue}
         setSearchValue={setSearchValue}
+        params={params}
+        setParams={setParams}
       />
     </TodoHeader>
 
